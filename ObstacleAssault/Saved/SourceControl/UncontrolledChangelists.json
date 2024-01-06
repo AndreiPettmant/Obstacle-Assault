@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/Andrei/Desktop/Stuff/EstudosUnreal/Obstacle-Assault/ObstacleAssault/Content/LearningKit_Games/Maps/LearningKit_Games_Showcase.umap",
+				"C:/Users/Andrei/Desktop/Stuff/EstudosUnreal/Obstacle-Assault/ObstacleAssault/Content/Main.umap",
+				"C:/Users/Andrei/Desktop/Stuff/EstudosUnreal/Obstacle-Assault/ObstacleAssault/Content/SCK_Casual01/Blueprints/ThirdPersonCharacter.uasset",
+				"C:/Users/Andrei/Desktop/Stuff/EstudosUnreal/Obstacle-Assault/ObstacleAssault/Content/SCK_Casual01/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/Andrei/Desktop/Stuff/EstudosUnreal/Obstacle-Assault/ObstacleAssault/Content/BP_ThirdPersonCharacter.uasset"
+			]
+		}
+	]
+}
