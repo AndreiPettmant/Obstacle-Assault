@@ -16,25 +16,45 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	startLocation = GetActorLocation();
-	
 }
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	MovePlatform(DeltaTime);
+	RotatePlatform(DeltaTime);
+}
 
-	FVector currentLocation = GetActorLocation();
-
-	currentLocation += platformVelocity * DeltaTime;
-
-	SetActorLocation(currentLocation);
-	float movingDistance = FVector::Dist(startLocation, currentLocation);
-
-	if (movingDistance > movedDistance)
+void AMovingPlatform::MovePlatform(float DeltaTime)
+{
+	if (ShouldPlatformReturn())
 	{
+		FVector moveDirection = platformVelocity.GetSafeNormal();
+		startLocation = startLocation + moveDirection * movedDistance;
+		SetActorLocation(startLocation);
 		platformVelocity = -platformVelocity;
-		startLocation = currentLocation;
 	}
+	else
+	{
+		FVector currentLocation = GetActorLocation();
+		currentLocation += platformVelocity * DeltaTime;
+		SetActorLocation(currentLocation);
+	}
+}
+
+void AMovingPlatform::RotatePlatform(float DeltaTime)
+{
+	AddActorLocalRotation(rotationVelocity * DeltaTime);
+}
+
+bool AMovingPlatform::ShouldPlatformReturn() const
+{
+	return GetDistanceMove() > movedDistance;
+}
+
+float AMovingPlatform::GetDistanceMove() const
+{
+	return FVector::Dist(startLocation, GetActorLocation());
 }
 
