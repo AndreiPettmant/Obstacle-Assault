@@ -38,5 +38,21 @@
 			"@C:\\Users\\Andrei\\Desktop\\Stuff\\EstudosUnreal\\Obstacle-Assault\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Andrei\\Desktop\\Stuff\\EstudosUnreal\\Obstacle-Assault\\ObstacleAssault\\Source\\ObstacleAssault\\ResetPlayerPosition.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Andrei\\Desktop\\Stuff\\EstudosUnreal\\Obstacle-Assault\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Andrei\\Desktop\\Stuff\\EstudosUnreal\\Obstacle-Assault\\ObstacleAssault\\Source\\ObstacleAssault\\ResetPlayerPosition.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Andrei\\Desktop\\Stuff\\EstudosUnreal\\Obstacle-Assault\\ObstacleAssault\\.vscode\\compileCommands_ObstacleAssault\\ObstacleAssault.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
 	}
 ]
